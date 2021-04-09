@@ -1,8 +1,8 @@
 {
-    "name": "cubequence/template",
-    "description": "PACKAGE_DESCRIPTION",
+    "name": "cubequence/file",
+    "description": "PHP handle files and folders",
     "keywords": [
-        "PACKAGE_TAG",
+        "file",
         "cubequence"
     ],
     "license": "MIT",
@@ -13,7 +13,10 @@
         }
     ],
     "require": {
-        "php": ">=8.0.0"
+        "php": ">=8.0.0",
+        "cubequence/crypto": "^1.0",
+        "league/flysystem": "^2.0",
+        "league/flysystem-aws-s3-v3": "^2.0"
     },
     "require-dev": {
         "nunomaduro/phpinsights": "dev-master",
@@ -27,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "CQ\\Template\\": "src/Template"
+            "CQ\\File\\": "src/File"
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "support": {
-        "issues": "https://github.com/CubeQuence/Template/issues",
-        "source": "https://github.com/CubeQuence/Template"
+        "issues": "https://github.com/CubeQuence/File/issues",
+        "source": "https://github.com/CubeQuence/File"
     }
 }
